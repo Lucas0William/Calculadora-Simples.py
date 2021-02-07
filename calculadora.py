@@ -252,19 +252,19 @@ answer = int(input('Digite o numero da operação desejada. (digite 0 para sair)
 
 if answer == 1:
 
-    adição()
+    adicao()
 
 elif answer == 2:
 
-    subtração()
+    subtracao()
 
 elif answer == 3:
 
-    divisão()
+    divisao()
 
 elif answer == 4:
 
-    multiplicação()
+    multiplicacao()
 
 elif answer == 0:
 
