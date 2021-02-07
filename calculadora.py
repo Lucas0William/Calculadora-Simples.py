@@ -1,6 +1,6 @@
 from time import sleep
 
-def adição():
+def adicao():
     
 
     num = float(input('Digite um número: '))
@@ -61,7 +61,7 @@ def adição():
                     print('\033[34m=-' * 22)
                     print(f'A soma dos valores digitados é igual a {int(Totconta)}')
 
-def subtração():
+def subtracao():
 
     num1 = float(input('Digite um numero: '))
 
@@ -119,7 +119,7 @@ def subtração():
                     print('\033[34m=-' * 22)
                     print(f'A soma dos valores digitados é igual a {int(Totconta)}')
 
-def divisão():
+def divisao():
 
     num1 = float(input('Digite um numero: '))
 
@@ -177,7 +177,7 @@ def divisão():
                     print('\033[34m=-' * 22)
                     print(f'A soma dos valores digitados é igual a {int(Totconta)}')
 
-def multiplicação():
+def multiplicacao():
 
     num1 = float(input('Digite um numero: '))
 
