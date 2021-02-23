@@ -4,7 +4,9 @@ contas = True
 
 
 def adicao():
-
+    
+    print('\033[37m')
+    
     num = float(input('Digite um número: '))
     num2 = float(input('Digite outro número: '))
 
@@ -68,6 +70,8 @@ def adicao():
 
 
 def subtracao():
+
+    print('\033[37m')
 
     num1 = float(input('Digite um numero: '))
 
@@ -134,6 +138,8 @@ def subtracao():
 
 def divisao():
 
+    print('\033[37m')
+
     num1 = float(input('Digite um numero: '))
 
     num2 = float(input('Digite outro numero: '))
@@ -199,6 +205,8 @@ def divisao():
 
 def multiplicacao():
 
+    print('\033[37m')
+
     num1 = float(input('Digite um numero: '))
 
     num2 = float(input('Digite outro numero: '))
@@ -262,7 +270,7 @@ def multiplicacao():
                         f'A soma dos valores digitados é igual a {int(Totconta)}')
 
 
-while contas == True:
+while contas == True: 
     
     print('=-' * 22)
 
@@ -280,6 +288,13 @@ while contas == True:
 
     answer = int(
         input('Digite o numero da operação desejada. (digite 0 para sair) :>>  '))
+
+    if answer not in range(0, 5):
+        
+        while answer not in range(0, 5):
+
+            answer = int(
+            input('\033[31mDesculpe, não entendi, digite o numero da operação desejada. (digite 0 para sair) :>>  '))
 
     if answer == 1:
 
@@ -337,7 +352,7 @@ while contas == True:
 
         divisao()
 
-        pergunta = str(input('Você quer fazer outra operação? [Sim/Não]: '))
+        pergunta = str(input('Você quer fazer outra operação? [Sim/Não]: ')).strip().rstrip().lstrip().upper()[0]
 
         if pergunta in 'S':
 
@@ -362,7 +377,7 @@ while contas == True:
 
         multiplicacao()
 
-        pergunta = str(input('Você quer fazer outra operação? [Sim/Não]: '))
+        pergunta = str(input('Você quer fazer outra operação? [Sim/Não]: ')).strip().rstrip().lstrip().upper()[0]
 
         if pergunta in 'S':
 
@@ -384,6 +399,8 @@ while contas == True:
                 break
 
     elif answer == 0:
+
+        contas = False
 
         print('OK!')
         sleep(1)
