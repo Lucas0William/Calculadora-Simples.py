@@ -57,4 +57,4 @@ while True:
             print(num1, "/", num2, "=", divisao(num1, num2))
     else:
         
-        print("Opção inválida. Por favor, escolha uma opção válida.")
+        print("Opção inválida, por favor escolha uma opção válida")
