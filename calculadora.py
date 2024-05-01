@@ -12,9 +12,10 @@ def multiplicacao(x, y):
 
 def divisao(x, y):
     
-    if y != 0:
+    if y > 0:
         
         return x / y
+        
     else:
         
         return "Erro: divisão por zero"
